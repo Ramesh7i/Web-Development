@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+        /* class Selector */
+        .red{
+            background-color: aquamarine;
+        }
+
+        /* id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+      
+        /* div > article > p {
+            color: blue;
+            background-color: bisque;
+        } */
+
+        /* descendant selector */
+
+        div p{
+            background-color: blue;
+            color: yellow;
+        }
+
+        /* Universal selector */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: rgb(2, 255, 2);
+        }
+
+        a:link{
+            color: green;
+        }
+        
+        a:active{
+            background-color: #ff0000;
+        }
+
+        a:hover{
+            color: aquamarine;
+            background-color: pink;
+        }
+
+        p:first-child{
+            background-color: darkmagenta;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+
+    </main>
+    <div class="red">
+        With the help of class to color this
+    </div>
+
+     <div id="green">
+        id selector using
+    </div>
+
+    <div id="green">
+        id selector using
+        <article>
+            <p>Using also paragraph inside the div</p>
+        </article>
+    </div>
+
+    <div>
+        I am another div
+    </div>
+
+    <div>
+        I am div
+    </div>
+
+    <a target="_blank" href="https://github.com/Ramesh7i/Web-Development">Go to Github</a>
+    <a href="https://google.com">Google</a>
+
+
+</body>
+</html>
