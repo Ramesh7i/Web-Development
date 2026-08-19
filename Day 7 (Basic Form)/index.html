@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Reg. form </title>
+</head>
+<body>
+   <!-- Heading -->
+    <h1>Reg. Form Fill</h1>
+
+   <!-- Registration form -->
+    <form action="post">
+
+      <!-- Username -->
+        <div>
+            <label for="username">Enter your username :</label>
+            <input type="text" id="username" name=" username" placeholder="Enter your username" autofocus>
+        </div>
+       
+      <!-- Choose one gender -->
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+         </div>
+
+            <!-- Choose skills -->
+         <div>
+            <input type="checkbox" id="Java" name="Java" value="yes">
+            <label for="Java">Java</label>
+
+            <input type="checkbox" id="python" name="python" value="yes">
+            <label for="python">python</label>
+         </div>
+
+            <!-- Choose a fruit -->
+         <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+         </div>
+
+            <!-- Write a comment -->
+         <div>
+            <label for="comment">Enter your Comment....</label>
+            <br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+         </div>
+
+
+    </form>
+</body>
+</html>
