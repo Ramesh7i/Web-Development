@@ -1,0 +1,17 @@
+.box{
+    border: 2px solid black;
+    padding: 34px;
+    /* adds a shadow around an element. */
+    box-shadow: 5px 5px 15px 5px blue;
+}
+
+.text-element{
+    /* adds a shadow behind text */
+    text-shadow: 7px 4px 3px purple;
+    /* adds a line around an element without affecting its layout. */
+    outline: 2px solid blueviolet;
+    /* rounds the corners of an element. */
+    border-radius: 48px;
+    /* controls the distance between an element and its outline. */
+    outline-offset: 19px;
+}
