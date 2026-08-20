@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            /* display: inline; Makes the element appear in the same line as other elements. */
+            display: inline-block; /* Keeps elements inline while allowing width, height, padding, and margin. */
+            width: 334px;
+            padding: 45px;
+            margin: 34px;
+        }
+
+        .box1{
+                display: none; /*Hides the element completely and removes its space. */
+            /* visibility: hidden; Hides the element but keeps its space. */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a good box</div>
+    <span>I am good</span>
+    <span>boy</span>
+</body>
+</html>
