@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desgin layout</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            position: sticky;
+            background-color: aqua;
+            /* padding-top: 20px;
+            margin: 5px; */
+            padding-bottom: 30px;
+        }
+        ul li{
+            position: sticky;
+            /* position: relative; */
+            /* background-color: pink; */
+            display: inline;
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        .boxes{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .box{
+            margin: 40px;
+            border: 2px solid black;
+            height: 700px;
+            width: 520px;
+            
+        }
+
+        .react{
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 35px;
+            height: 150px;
+        }
+
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            font-size: 2rem;
+        }
+        
+        .foot{
+            background-color: bisque;
+            height: 200px;
+            margin-top: 160px;
+        }
+
+      .cir{
+        
+        position: sticky;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 102, 0);
+        border-radius: 50%;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contect US</li>
+            </ul>
+        </nav>
+
+        <div class="boxes">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+        </div>
+
+        <div class="cir"></div>
+
+        <div class="react">
+            <span>Hello friends welcome to my website</span>
+        </div>
+    </header>
+
+    <footer>
+        <div class="foot">
+
+            <div class="hii">Hii </div>
+        </div>
+    </footer>
+</body>
+</html>
