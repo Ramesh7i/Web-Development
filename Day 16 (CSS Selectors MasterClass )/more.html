@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box ki pehli line ka text pink color mein hoga. */
+        /* .box::first-line{
+            color: pink;
+        } */
+
+        /* .boxes ke andar sabhi elements par styles apply honge. */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* data-color="primary" wale element ki top padding 45px hogi. */
+        /* [data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        .box:nth-child(even){
+            background-color: yellow;
+        }
+
+        /* .boxes ke before pseudo-element mein content insert karta hai. */
+        .boxes::before{
+            content: "That is something new";
+            color: aqua;
+        }
+
+        .boxes::after{
+            content: "Nothing here to say it";
+            color: red;
+        }
+
+        ::selection{
+            color: magenta;
+            background-color: blueviolet;
+        }
+
+        .box::first-letter{
+            color: blue;
+            font-size: 20px;
+        }
+
+        input::placeholder{
+            color: rgb(119, 150, 150);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box </div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>
