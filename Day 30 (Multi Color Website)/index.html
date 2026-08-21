@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+    <style>
+        :root{
+            --color:pink;
+            --seccolor:rgb(255, 31, 68);
+            --defop: 0.4;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            display: flex;
+            /* background-color: aqua; */
+            background-color: var(--seccolor);
+
+        }
+
+        ul li{
+            padding: 23px;
+            border: 2px solid black;
+            /* background-color: rgb(255, 209, 3); */
+            background-color: var(--color);
+            color: var(--seccolor);
+        }
+
+        @media only screen and (max-width: 450px){
+            ul{
+                background-color: aqua;
+            }
+            ul li{
+                background-color: beige;
+                color: var(--color);
+                opacity: var(--defop);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About me</li>
+                <li>Content</li>
+                <li>Sunny</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
