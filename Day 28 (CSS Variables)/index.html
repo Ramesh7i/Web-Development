@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+
+        /* :root mein global colors ke variables define hain. */
+        :root{
+            /* --color variable mein blue color store hai. */
+            --color:blue;
+
+            /* --seccolor variable mein purple color store hai. */
+            --seccolor:rgb(195, 0, 255);
+
+            /* --defpad variable mein 23px padding value store hai. */
+            --defpad:23px;
+
+            /* --defop variable mein opacity ki value 0.4 store hai. */
+            --defop: 0.4;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: greenyellow; */
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+  
+        ul li{
+            /* opacity: 0.3; */
+            opacity: var(--defop);
+           
+           
+            list-style: none;
+            /* padding: 34px; */
+
+            /* padding mein --defpad ki 23px value use ho rahi hai. */
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        /* ul ke pehle li ka background pink hai. */
+        ul li:first-child{
+            --color:pink;
+            background-color:var(--color, darkblue);
+        }
+
+        .container{
+            /* background-color: rgb(23, 255, 127); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsum dicta laborum nostrum temporibus eius eum velit aliquid minima, necessitatibus expedita illo cumque consequuntur at deleniti quia neque. Dolor sapiente corporis pariatur soluta molestias impedit facilis porro magni! Unde velit amet sed? Ipsum, sint fuga!
+    </div>
+    
+</body>
+</html>
