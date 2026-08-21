@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            /* flow-root container ko float elements ki height properly contain karne deta hai. */
+            display: flow-root;
+        }
+        img{
+            /* float: left element ko left side bhejkar text ko wrap karata hai.*/
+            float: left;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clear: left element ko left float ke neeche bhejta hai. */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="230px" src="https://wallpapercg.com/media/ts_orig/26136.webp" alt="umm..">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur non tempora commodi quaerat cupiditate ipsa eius. Repellendus dolorum, dolorem, unde officiis neque vel ab nihil enim dolores voluptates odit numquam. Distinctio, sequi sapiente.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum fugiat soluta asperiores rem, incidunt sed dolores, culpa beatae atque explicabo harum tenetur voluptates recusandae pariatur illo! Perspiciatis tempora earum recusandae ipsa itaque facere, expedita dignissimos blanditiis rem sunt illo cum ut voluptas officia necessitatibus, dolores unde repudiandae sed! Esse quidem quia, dolorem vero dolor ipsa, atque eveniet natus error harum itaque obcaecati possimus blanditiis! Omnis in ex facere rem sed, quam atque enim necessitatibus optio blanditiis suscipit, doloribus est consequatur aspernatur corporis ducimus sunt? Modi molestiae repellendus cum sunt vel porro laudantium expedita quasi, cupiditate nemo assumenda officiis id sapiente qui quis sequi hic! Ipsam odit aspernatur nostrum at iste inventore maiores, distinctio expedita quidem sed nobis quis excepturi, obcaecati autem ipsum. Tempora iusto molestiae quibusdam dolores, quia asperiores. Laudantium delectus vitae dignissimos saepe molestiae alias magnam distinctio dolor sit culpa similique quasi, voluptas, quos deleniti aliquam! Molestiae, magnam consequuntur? Et molestias excepturi blanditiis fuga alias quas, exercitationem autem veniam quasi doloribus deserunt sapiente impedit incidunt. Expedita aliquid eligendi fuga velit quis, totam numquam veniam? Autem assumenda, ducimus soluta deleniti deserunt, quo corrupti explicabo necessitatibus quia placeat molestiae veniam voluptas quasi id quas aliquid aspernatur tempore, amet officiis. Quo similique rerum, quasi tempore rem vel possimus, deserunt officiis architecto quaerat, aut quod sapiente nostrum quidem autem. Illum sint sunt vero mollitia magni fugit delectus? Optio fugit exercitationem quis nulla consectetur eos minima voluptas commodi soluta, in quos praesentium, unde rem repudiandae nemo saepe ipsam atque rerum eius reiciendis sapiente cupiditate id aut quibusdam. Incidunt consequuntur culpa minima impedit aliquid recusandae cum autem. Aut, alias itaque! Vel nesciunt eum molestias repellat distinctio eaque sed aliquid vitae harum esse beatae repudiandae dignissimos hic sequi cum recusandae, quidem consectetur ullam quis. Saepe nesciunt ad magni nisi laborum possimus magnam eaque hic, omnis voluptatem fugit fuga ex praesentium sit perferendis voluptates, est recusandae! Consectetur molestiae laboriosam tenetur nobis quidem ex eius dicta earum laborum esse cum officiis, ab, pariatur eligendi quis repellendus dolorem facilis sequi.</div>
+        <div class="card">Card 3</div>
+        
+    </div>
+</body>
+</html>
