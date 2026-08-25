@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            background-color: rgb(255, 145, 1);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: sunnyhello;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 1s; */
+            /* animation: alternate-reverse; */
+            /* animation-play-state: paused;  */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: sunnyhello 3s ease-in-out 3s 1 backwards,
+                       sunny 3s ease-in-out 3s 1;
+
+
+
+        }
+
+        @keyframes sunnyhello{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes sunny{
+            0%{
+                transform: rotate(100deg);
+            }
+
+            20%{
+                transform: rotate(200deg);
+            }
+
+            50%{
+                transform: rotate(220deg);
+            }
+
+            80%{
+                transform: rotate(300deg);
+            }
+
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
