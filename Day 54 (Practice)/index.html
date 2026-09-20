@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rand = Math.random()
+        let first, sec, third;
+        //first word
+        if(rand<0.33){
+            first = "Meow"
+        }
+        else if(rand<0.66 && rand>=0.33) {
+            first= "Broo"
+        }
+        else{
+            first = "Food"
+        }
+        //sec word
+        if(rand<0.33){
+            sec = "Nothing"
+        }
+        else if(rand<0.66 && rand>=0.33) {
+            sec= "What that"
+        }
+        else{
+            sec = "Its me"
+        }
+
+        //third word
+        if(rand<0.33){
+            third = "Nothing"
+        }
+        else if(rand<0.66 && rand>=0.33) {
+            third= "What that"
+        }
+        else{
+            third = "Its me"
+        }
+
+        console.log('${first} ${sec} ${third}')
+    </script>
+</body>
+</html>
