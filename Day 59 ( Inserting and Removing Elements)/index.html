@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-created="ramesh">Hey its me</div>
+        <div class="box">Hey its me</div>
+
+        <script>
+            let div = document.createElement("div");
+            div.innerHTML = "<b>This is add by JS</b>"
+            div.setAttribute("class", "created");
+           
+            // document.querySelector(".container").append(div)
+            // document.querySelector(".container").before(div)
+            // document.querySelector(".container").prepend(div)
+
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("afterbegin", "<i>Umm.. piti piti kar do </i>")
+        </script>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
